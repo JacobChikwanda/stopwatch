@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    margin-top: 1em;
+    flex-direction: column;
+    background-color: #f3f3f3;
+}
+
+.control {
+    height: 6em;
+}
+
+.control-setting {
+    height: 5em;
+}
+
+.button {
+    cursor: pointer;
+}
+
+.active-button {
+    filter: drop-shadow(2px 2px 4px #5f80a1);
+}
+
+/* Stopwatch */
+
+/*---- Body ----*/
+#stopwatch-body {
+    width: 20em;
+    min-height: 25em;
+    background: radial-gradient(white, #77a0ca);
+    border-radius: 3em;
+    padding: 1em;
+}
+
+/*---- Screen ----*/
+#screen-container {
+    display: flex;
+    justify-content: center;
+}
+#stopwatch-screen {
+    width: 18em;
+    height: 18em;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 1em solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+/*---- Main Display ----*/
+#main-display1 {
+    font-size: 3em;
+}
+
+#main-display2 {
+    font-size: 2.3em;
+}
+
+/*---- Counter Display ----*/
+#counter-display {
+    position: absolute;
+    bottom: .8em;
+    font-size: 2em;
+}   
+/*---- Controls ----*/
+#stopwatch-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1em;
+}
+
+/* Tune */
+#stopwatch-tune {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 20em;
+    gap: 1em;
+    margin-top: 1em;
+}
+
+.tune-btn {
+    border: none;
+    padding-block: 1em;
+}
+
+.yellow {
+    background-color: #fed966;
+}
+
+.green {
+    background-color: #92c47d;
+}
+
+.tune-title {
+    margin-bottom: .2em;
+}
+
+.body-tunes-container {
+    display: flex;
+    gap: 1em;
+}
+
+.input {
+    width: 5em;
+    padding-block: .5em;
+    padding-inline: .2em;
+}
