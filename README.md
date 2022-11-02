@@ -21,5 +21,7 @@ Two-Note is a simplistic stopwatch that helps one tract time elapsed between eve
 </p>
 
 ## Features of v 1.0
+ - User can start, reset and stop the stop watch.
+
+ ## Features of v 2.0
  - User can adjust the applications appearance. As well as save the changes temporarily or permanently.
- - User can start and stop the stop watch.
