@@ -7,9 +7,8 @@
 
 .center {
     display: flex;
-    align-items: center;
+    justify-content: center;
     margin-top: 1em;
-    flex-direction: column;
     background-color: #f3f3f3;
 }
 
@@ -86,8 +85,40 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     width: 20em;
+    height: fit-content;
     gap: 1em;
-    margin-top: 1em;
+    background: radial-gradient(white, #77a0ca);
+    padding: 1.5em;
+    border-radius: 1em;
+    position: absolute;
+    filter: drop-shadow(0 5px 4px #000000);
+    top: 24%;
+    transform: translateY(-24%);
+    transition: 1.5s;
+}
+
+.close {
+    grid-column: span 2;
+    display: flex;
+    justify-content: center;
+}
+
+#cog {
+    height: 2em;
+    cursor: pointer;
+}
+
+#cog:hover {
+    opacity: .8;
+}
+
+#close-icon {
+    height: 2em;
+    cursor: pointer;
+}
+
+#close-icon:hover {
+    opacity: .5;
 }
 
 .tune-btn {
@@ -116,4 +147,18 @@
     width: 5em;
     padding-block: .5em;
     padding-inline: .2em;
+}
+
+#update, #save {
+    cursor: pointer;
+    grid-column: span 2;
+}
+
+#update:hover, #save:hover {
+    opacity: .8;
+}
+
+.closeSlide {
+    transition: 1.5s !important;
+    transform: translateY(-200%) !important;
 }
