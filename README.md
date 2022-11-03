@@ -1,4 +1,4 @@
-# Two-Note Stopwatch (v 1.0)
+# Two-Note Stopwatch (v 2.0)
 
 ![ineuro, lco](https://img.shields.io/badge/iNeuron-LCO-blue)
 ![](https://img.shields.io/badge/React%20Js-Tailwind%20CSS-brightgreen)
@@ -7,7 +7,13 @@
 
 <a href='https://stopwatch-green-six.vercel.app/'>Click Here to Check it Out</a>
 
-<img src='./assets/mockup.jpg'></img>
+## Version 2 Preview
+Very customizable.
+<img src='./assets/version2.png'></img>
+<img src='./assets/Version2-Drop.png'></img>
+
+## Verion 1 Preview
+<img src='./assets/Version1.png'></img>
 
 ## About Project
 
@@ -24,4 +30,4 @@ Two-Note is a simplistic stopwatch that helps one tract time elapsed between eve
  - User can start, reset and stop the stop watch.
 
  ## Features of v 2.0
- - User can adjust the applications appearance. As well as save the changes temporarily or permanently.
+ - User can adjust the applications appearance. As well as persist the changes in browser.
