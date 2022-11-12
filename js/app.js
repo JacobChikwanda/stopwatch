@@ -17,6 +17,7 @@ const adjElements = [textElem, stopWatchPauseButton, stopWatchSettingButton, sto
 
 let [mainCounter1, mainCounter2, changingCounter] = [0, 0, 0];
 let intervalID = null;
+let currentActiveBtn = null;
 
 // Looks
 const constantLook = {
@@ -60,10 +61,23 @@ const setActiveButton = (clickedButton) => {
         
         if (clickedButton === button.id) {
             button.classList.add('active-button')
+            currentActiveBtn = button;
         } else {
             button.classList.remove('active-button')
         }
         
+    }
+}
+
+const checkIfClickedButtonIsActive = (clickedButton) => {
+    if (!currentActiveBtn) {
+        return false;
+    }
+    
+    if (currentActiveBtn.id === clickedButton) {
+        return true;
+    } else {
+        return false;
     }
 }
 
@@ -80,16 +94,28 @@ const reset = () => {
 const handleClick = ({ clickedButton }) => {
     switch (clickedButton) {
         case 'pause':
-            setActiveButton('pause');
-            stopTimer();
+            if (checkIfClickedButtonIsActive('pause')) {
+                return
+            } else {
+                setActiveButton('pause');
+                stopTimer();
+            }
             break;
         case 'settings':
-            setActiveButton('settings');
-            reset()
+            if (checkIfClickedButtonIsActive('settings')) {
+                return
+            } else {
+                setActiveButton('settings');
+                reset();
+            }
             break;
         case 'play':
-            setActiveButton('play');
-            startTimer();
+            if (checkIfClickedButtonIsActive('play')) {
+                return
+            } else {
+                setActiveButton('play');
+                startTimer();
+            }
             break;
         default:
             break;
